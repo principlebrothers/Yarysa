@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -13,6 +14,7 @@
   --secondary-color: #00fe87;
   --linear-color-one: #2f2e41;
   --linear-color-two: #404556;
+  --border-color: #ffffff5c;
   --line-height: 1.5;
   --font-family: 'Sen', sans-serif;
 }
@@ -23,5 +25,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1280px;
+}
+
+.small__font {
+  font-size: 1rem;
+}
+
+secondary__font__color {
+  color: var(--secondary-color);
 }
