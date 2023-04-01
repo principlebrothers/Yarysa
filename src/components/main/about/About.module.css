@@ -122,7 +122,6 @@
   transform: scale(0.97);
 }
 
-
 @media screen and (max-width: 425px) {
   .section__logo {
     display: none;
