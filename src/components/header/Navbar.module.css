@@ -113,37 +113,3 @@ nav::after {
   }
 
 }
-
-/* @media screen and (max-width: 700px) {
-  nav {
-    margin: 2rem 1rem;
-  }
-
-  nav::after {
-    left: 0;
-    width: 100%;
-  }
-
-  .nav__menu {
-    display: block;
-  }
-
-  .nav__links {
-    position: absolute;
-    top: 70px;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    padding: 1rem;
-    background-color: var(--updaged-secondary-color);
-    transition: 0.5s ease-in-out;
-  }
-
-  .nav__action__container {
-    display: none;
-  }
-
-  .active {
-    display: flex;
-  }
-} */
