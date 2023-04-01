@@ -1,0 +1,38 @@
+.blog__container {
+  min-height: 505px;
+  background: url('../../../assets/blog_cover.png') no-repeat center center/cover;
+  position: relative;
+}
+
+.blog__content {
+  width:68%;
+  height: 100%;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 690.7px solid #262830e3;
+}
+
+.blog__briefing__container {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20%;
+}
+
+.blog__briefing__left {
+  display: flex;
+  min-width: 45%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog__briefing__right {
+  min-width: 45%;
+}
+
