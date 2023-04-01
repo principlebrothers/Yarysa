@@ -66,7 +66,7 @@ function Intro() {
           </div>
         </div>
         <div className={styles.right_side}>
-          <div className={styles.introImage}>
+          <div className={styles.intro_image}>
             <img src={laptopImage} alt="intro" />
           </div>
         </div>
