@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.left__side {
+  position: absolute;
+  left: 0;
+  width: 48%;
+  height: 100%;
+  border-radius: 17px 50px 50px 17px;
+  background: linear-gradient(117.45deg, #e0e7ff 17.61%, #e0e7ff 55.43%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1;
+}
+
+.left__side::after {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 102%;
+  padding-left: 1rem;
+  border: 2px dashed #e0e7ff;
+  border-radius: 0 50px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.logo__container {
+  background: rgb(47, 46, 65);
+  width: 282px;
+  height: 83px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.union {
+  position: absolute;
+  top: 31px;
+  right: 51px;
+}
+
+.sign__in__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sign__in__info p {
+  width: 55%;
+  text-align: center;
+}
+
+.equipment {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  bottom: 10px;
+  z-index: -1;
+}
+
+.left__side form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.left__side form input {
+  width: 120%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background-color: #f0f2f5;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: -3px 0 0px #02b55c;
+  ;
+}
+
+.left__side form input[type="submit"] {
+  width: 120%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  background-color: #02b55c;
+  font-size: 1rem;
+}
+
+.terms__conditions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 2.5rem 0;
+  padding: 0 0.5rem;
+  gap: 2rem;
+}
+
+.terms__conditions a {
+  color: #02b55c;
+}
+
+.allright_reverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--linear-color-two);
+}
+
+.allright_reverse p span {
+  color: #02b55c;
+}
+
+
+.right__side {
+  position: absolute;
+  right: 0;
+}
+
+.right__side__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right__side__content img {
+  background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .union {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .left__side {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .right__side {
+      display: none;
+    }
+}
+
+
