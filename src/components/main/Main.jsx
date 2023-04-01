@@ -4,7 +4,6 @@ import Blog from './blog/Blog';
 import Intro from './Intro/Intro';
 import Portfolio from './porfolio/Portfolio';
 
-
 function Main() {
   return (
     <main>

@@ -85,10 +85,8 @@
   padding: 0 1rem;
   font-size: 1rem;
   background-color: #f0f2f5;
-  font-size: 1rem;
   position: relative;
-  box-shadow: -3px 0 0px #02b55c;
-  ;
+  box-shadow: -3px 0 0 #02b55c;
 }
 
 .left__side form input[type="submit"] {
@@ -99,7 +97,6 @@
   padding: 0 1rem;
   font-size: 1rem;
   background-color: #02b55c;
-  font-size: 1rem;
 }
 
 .terms__conditions {
@@ -127,7 +124,6 @@
 .allright_reverse p span {
   color: #02b55c;
 }
-
 
 .right__side {
   position: absolute;
@@ -158,8 +154,6 @@
   }
 
   .right__side {
-      display: none;
-    }
+    display: none;
+  }
 }
-
-

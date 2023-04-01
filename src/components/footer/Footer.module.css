@@ -14,7 +14,6 @@ footer {
 .left span {
   font-size: 1rem;
   color: var(--border-color);
-  text-shadow: 0 2px 4px 0.2rem rgba(0, 0, 0, 0.4);
 }
 
 .social {
@@ -23,16 +22,16 @@ footer {
   gap: 1rem;
 }
 
-.social>* {
+.social > * {
   color: var(--border-color);
+  /* stylelint-disable-next-line */
   font-size: clamp(1.2rem, 2vw, 2rem);
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
-.social>*:hover {
+.social > *:hover {
   color: var(--secondary-color);
-  background-color: 0 2px 4px 0.2rem rgba(0, 0, 0, 0.4);
 }
 
 .right {
@@ -59,7 +58,7 @@ footer {
 .details__cover ul li {
   list-style: none;
   color: var(--primary-color);
-  line-height: 2.0;
+  line-height: 2;
 }
 
 @media screen and (max-width: 425px) {

@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import yarysa_logo from '../../assets/yarysa_logo.svg';
-import { navLinks } from '../utils/Utils';
 import { AiOutlineMenu } from 'react-icons/ai';
+import yarysaLogo from '../../assets/yarysaLogo.svg';
+import { navLinks } from '../utils/Utils';
 
 import styles from './Navbar.module.css';
-
 
 function Navbar() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -29,33 +28,33 @@ function Navbar() {
           onClick={handleLinksDisplay}
         />
       ) : (
-          ''
+        ''
       )}
-        <section
-          id='nav'
-          className={`${styles.nav} ${isActive ? styles.active : ''}`}
+      <section
+        id="nav"
+        className={`${styles.nav} ${isActive ? styles.active : ''}`}
+      >
+        <div className="logo__container">
+          <img src={yarysaLogo} alt="logo" width="225" height="33" />
+        </div>
+        <div
+          className={`${styles.nav__links}`}
         >
-          <div className='logo__container'>
-            <img src={yarysa_logo} alt='logo' width='225' height='33' />
-          </div>
-          <div
-            className={`${styles.nav__links}`}
-          >
-            {navLinks.map((link) => (
-              <Link to={link.path} key={link.id} className={styles.nav__font}>
-                {link.page}
-              </Link>
-            ))}
-          </div>
-          <div
-            className={`${styles.nav__action__container} `}
-          >
-            <Link to='/login' className={`${styles.nav__font}`}>
-              LOG IN
+          {navLinks.map((link) => (
+            <Link to={link.path} key={link.id} className={styles.nav__font}>
+              {link.page}
             </Link>
-            <button type='button'>GET STARTED</button>
-          </div>
-        </section>
+          ))}
+        </div>
+        <div
+          className={`${styles.nav__action__container} `}
+        >
+          <Link to="/login" className={`${styles.nav__font}`}>
+            LOG IN
+          </Link>
+          <button type="button">GET STARTED</button>
+        </div>
+      </section>
     </nav>
   );
 }

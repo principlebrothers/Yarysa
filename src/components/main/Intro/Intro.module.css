@@ -3,6 +3,7 @@
 }
 
 .intro__head__text {
+  /* stylelint-disable-next-line */
   font-size: clamp(2.5rem, 4vw, 4rem);
   color: var(--primary-color);
 }
@@ -88,6 +89,7 @@
 
 @media screen and (max-width: 768px) {
   .intro__head__text {
+    /* stylelint-disable-next-line */
     font-size: clamp(1.5rem, 4vw, 2.5rem);
   }
 
@@ -100,6 +102,7 @@
   }
 
   .left_side p {
+    /* stylelint-disable-next-line */
     font-size: default;
   }
 

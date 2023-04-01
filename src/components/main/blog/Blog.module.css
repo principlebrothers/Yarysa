@@ -1,11 +1,11 @@
 .blog__container {
   min-height: 505px;
-  background: url('../../../assets/blog_cover.png') no-repeat center center/cover;
+  background: url('../../../assets/blogCover.png') no-repeat center center/cover;
   position: relative;
 }
 
 .blog__content {
-  width:68%;
+  width: 68%;
   height: 100%;
   border-bottom: 0 solid transparent;
   border-left: 0 solid transparent;
@@ -35,4 +35,3 @@
 .blog__briefing__right {
   min-width: 45%;
 }
-

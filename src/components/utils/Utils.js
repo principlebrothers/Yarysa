@@ -34,28 +34,26 @@ export const portfolioData = [
   },
 ];
 
-
 export const aboutData = [
   {
     id: 1,
     title: 'File Insurance Claims',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.'
+      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
   },
   {
     id: 2,
     title: 'Determine Cost of Treatment',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.'
+      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
   },
   {
     id: 3,
     title: 'Collect From Patients and Insurers',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.'
+      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
   },
 ];
-
 
 export const footerData = [
   {

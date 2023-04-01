@@ -80,7 +80,6 @@ nav::after {
   box-shadow: 0 0 10px 0 var(--border-color);
 }
 
-
 @media screen and (max-width: 1024px) {
   .nav {
     display: none;
@@ -108,5 +107,4 @@ nav::after {
     gap: 2rem;
     align-items: center;
   }
-
 }
