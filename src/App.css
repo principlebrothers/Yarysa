@@ -12,8 +12,11 @@
 :root {
   --primary-color: #fff;
   --secondary-color: #00fe87;
+  --updaged-secondary-color: #005A30;
+  --general-font-color: #313647;
   --linear-color-one: #2f2e41;
   --linear-color-two: #404556;
+  --secondary-background: #e5ebfe;
   --border-color: #ffffff5c;
   --line-height: 1.5;
   --font-family: 'Sen', sans-serif;
@@ -31,6 +34,72 @@
   font-size: 1rem;
 }
 
-secondary__font__color {
+.medium__font {
+  font-size: 1.2rem;
+}
+
+.general__font__color {
+  color: var(--general-font-color);
+}
+
+.secondary__font__color {
   color: var(--secondary-color);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.updaged__secondary__color {
+  color: var(--updaged-secondary-color);
+}
+
+.primary__color {
+  color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.align__center {
+  align-items: center;
+}
+
+.justify__center {
+  justify-content: center;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.flex__column {
+  flex-direction: column;
+}
+
+.tertiary__color {
+  color: var(--border-color);
+}
+
+.arrow {
+  animation: peep 0.8s linear infinite;
+}
+
+@keyframes peep {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
