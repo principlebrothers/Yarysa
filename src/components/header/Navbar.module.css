@@ -14,7 +14,7 @@ nav::after {
 }
 
 .nav {
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -80,13 +80,10 @@ nav::after {
   box-shadow: 0 0 10px 0 var(--border-color);
 }
 
-.active {
-  display: flex;
-}
-
 
 @media screen and (max-width: 1024px) {
   .nav {
+    display: none;
     flex-direction: column;
     height: 100%;
   }
