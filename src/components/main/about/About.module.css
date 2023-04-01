@@ -123,8 +123,13 @@
 }
 
 @media screen and (max-width: 425px) {
-  .section__logo {
-    display: none;
+  .top__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__logo p {
+    margin: 0 0 1rem 0;
   }
 
   .section__title p {
