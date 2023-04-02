@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 import yarysaLogo from '../../assets/yarysaLogo.svg';
@@ -7,14 +7,7 @@ import { navLinks } from '../utils/Utils';
 import styles from './Navbar.module.css';
 
 function Navbar() {
-  const [width, setWidth] = useState(window.innerWidth);
   const [isActive, setIsActive] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   const handleLinksDisplay = () => {
     setIsActive(!isActive);
@@ -22,37 +15,34 @@ function Navbar() {
 
   return (
     <nav>
-      {width < 1024 ? (
+      <div className={styles.mobile__menu}>
+        <div className={styles.logo__container}>
+          <img src={yarysaLogo} alt='logo' width='225' height='33' />
+        </div>
         <AiOutlineMenu
           className={`${styles.nav__menu}`}
           onClick={handleLinksDisplay}
         />
-      ) : (
-        ''
-      )}
+      </div>
       <section
-        id="nav"
+        id='nav'
         className={`${styles.nav} ${isActive ? styles.active : ''}`}
       >
-        <div className="logo__container">
-          <img src={yarysaLogo} alt="logo" width="225" height="33" />
+        <div className={styles.desktop__logo__container}>
+          <img src={yarysaLogo} alt='logo' width='225' height='33' />
         </div>
-        <div
-          className={`${styles.nav__links}`}
-        >
+        <div className={`${styles.nav__links}`}>
           {navLinks.map((link) => (
             <Link to={link.path} key={link.id} className={styles.nav__font}>
               {link.page}
             </Link>
           ))}
         </div>
-        <div
-          className={`${styles.nav__action__container} `}
-        >
-          <Link to="/login" className={`${styles.nav__font}`}>
+        <div className={`${styles.nav__action__container} `}>
+          <Link to='/login' className={`${styles.nav__font}`}>
             LOG IN
           </Link>
-          <button type="button">GET STARTED</button>
+          <button type='button'>GET STARTED</button>
         </div>
       </section>
     </nav>
