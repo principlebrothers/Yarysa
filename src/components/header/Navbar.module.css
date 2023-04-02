@@ -110,7 +110,6 @@ nav::after {
 
   .nav__menu {
     display: block;
-    z-index: 10;
   }
 
   .nav__links {
