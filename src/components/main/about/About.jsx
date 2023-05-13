@@ -13,30 +13,32 @@ function About() {
       <div className={styles.top__content}>
         <div className={styles.section__logo}>
           <p>
-            <HiOutlineLightBulb className='updaged__secondary__color medium__font' />
+            <HiOutlineLightBulb className="updaged__secondary__color medium__font" />
           </p>
         </div>
         <div className={styles.section__title}>
-          <span className='updaged__secondary__color'>
+          <span className="updaged__secondary__color">
             MEDICAL BILLING DEVELOPMENT PLATFORM
           </span>
-          <h2 className='general__font__color'>
+          <h2 className="general__font__color">
             The complete Toolkit for patient records and healthcare
             prescriptions
           </h2>
           <p>
-            Experience the Future of Healthcare with Yarysa EMR's Complete
+            Experience the Future of Healthcare with Yarysa EMR&apos;s Complete
             Toolkit for Patient Records and Prescriptions - Transform Your
             Practice with Cutting-Edge Technology and Streamlined Workflows.
           </p>
-          <span className='flex align__center gap updaged__secondary__color small__font'>
-            Check our pricing <MdArrowForwardIos className='arrow' />
+          <span className="flex align__center gap updaged__secondary__color small__font">
+            Check our pricing
+            {' '}
+            <MdArrowForwardIos className="arrow" />
           </span>
         </div>
       </div>
       <div className={styles.middle__content}>
         <div className={styles.left_content}>
-          <img src={nurses} alt='portfolio' height='300px' width='416px' />
+          <img src={nurses} alt="portfolio" height="300px" width="416px" />
         </div>
       </div>
       <div className={styles.buttom__content}>
@@ -52,14 +54,16 @@ function About() {
         </div>
       </div>
       <div className={styles.final__container}>
-        <p className='primary__color padding'>
+        <p className="primary__color padding">
           Start protecting patients and improve healthcare today
         </p>
         <button
-          type='button'
+          type="button"
           className={`${styles.btn} flex gap justify__center `}
         >
-          GET STARTED <IoIosArrowRoundForward className='arrow' />
+          GET STARTED
+          {' '}
+          <IoIosArrowRoundForward className="arrow" />
         </button>
       </div>
     </section>
