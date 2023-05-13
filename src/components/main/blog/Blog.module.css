@@ -35,3 +35,13 @@
 .blog__briefing__right {
   min-width: 45%;
 }
+
+@media (width <= 640px) {
+  .blog__briefing__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgba(15, 15, 15, 0.1);
+    padding: 1rem;
+  }
+}
