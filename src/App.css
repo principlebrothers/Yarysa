@@ -103,3 +103,7 @@
     transform: translateX(0);
   }
 }
+
+.pointer {
+  cursor: pointer;
+}
