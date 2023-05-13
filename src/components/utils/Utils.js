@@ -37,21 +37,26 @@ export const portfolioData = [
 export const aboutData = [
   {
     id: 1,
-    title: 'File Insurance Claims',
+    title: 'Streamlined Operations',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+      'Fully integrated clinical, support, finance and billing, supply chain and administrative functions for more efficient operations.',
   },
   {
     id: 2,
-    title: 'Determine Cost of Treatment',
-    details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+    title: 'Interoperability Across Standards',
+    details: 'Compliance with standards like ICD 10/11',
   },
   {
     id: 3,
-    title: 'Collect From Patients and Insurers',
+    title: 'Enhanced Patient Care',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+      'Structured, specialty-wise electronic medical records enabling doctors to provide diagnosis-based care with better visibility to patients.',
+  },
+  {
+    id: 4,
+    title: 'Information Security',
+    details:
+      'Role-based security matrix to define user controls in each department and block-chain for optimizing productivity.',
   },
 ];
 
