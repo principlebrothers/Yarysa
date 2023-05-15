@@ -33,9 +33,9 @@ function Portfolio() {
         </div>
       </div>
       <div className={styles.buttom__content}>
-        <div className={styles.left_content}>
+        <figure className={styles.left_content}>
           <img src={checklist} alt="portfolio" width="600px" />
-        </div>
+        </figure>
         <div className={styles.right_content}>
           <div className={styles.portfolio__data}>
             {portfolioData.map((data) => (
