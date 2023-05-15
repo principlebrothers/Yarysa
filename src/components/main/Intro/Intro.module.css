@@ -48,7 +48,7 @@
 
 .btn:hover {
   background-color: var(--primary-color);
-  transform: scale(1.03);
+  transform: translateY(-8px);
   color: var(--updaged-secondary-color);
   box-shadow: 0 0 10px 0 var(--border-color);
   border: 1px solid var(--secondary-color);
