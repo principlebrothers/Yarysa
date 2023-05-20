@@ -38,6 +38,18 @@
   font-size: 1.2rem;
 }
 
+.line__height {
+  line-height: var(--line-height);
+}
+
+.specific__paragraph__font {
+  font-size: 1.1rem;
+  padding-right: 1rem;
+}
+.large__font {
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
+}
+
 .general__font__color {
   color: var(--general-font-color);
 }

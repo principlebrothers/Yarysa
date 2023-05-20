@@ -1,5 +1,5 @@
 .blog__container {
-  min-height: 505px;
+  height: 380px;
   background: url('../../../assets/blogCover.png') no-repeat center center/cover;
   position: relative;
 }
@@ -15,7 +15,7 @@
 
 .blog__briefing__container {
   position: absolute;
-  width: 80%;
+  width: 87%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

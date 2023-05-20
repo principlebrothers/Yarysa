@@ -64,7 +64,6 @@
 }
 
 .left_content img {
-  width: 90%;
   object-fit: contain;
   transition: 0.5s ease-in-out;
 }

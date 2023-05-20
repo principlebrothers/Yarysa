@@ -5,6 +5,7 @@
 .intro__head__text {
   /* stylelint-disable-next-line */
   font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 800;
   color: var(--primary-color);
 }
 
@@ -88,7 +89,13 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 768px) {
+@media (width <= 980px) {
+  .right__side {
+    display: none;
+  }
+}
+
+@media (width <= 768px) {
   .intro__head__text {
     /* stylelint-disable-next-line */
     font-size: clamp(1.5rem, 4vw, 2.5rem);
