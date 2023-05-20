@@ -10,7 +10,8 @@
 }
 
 .container h1 {
-  font-size: 15rem;
+  text-align: center;
+  font-size: 10rem;
   color: var(--updaged-secondary-color);
 }
 
@@ -29,11 +30,21 @@
 .container button:hover {
   background-color: var(--primary-color);
   color: var(--updaged-secondary-color);
-  transform: scale(1.03);
+  transform: translateY(-8px);
   box-shadow: 0 0 10px 0 var(--border-color);
   border: 1px solid var(--updaged-secondary-color);
 }
 
 .container button:active {
   transform: scale(0.97);
+}
+
+@media (width <= 820px) {
+  .container h1 {
+    font-size: 4rem;
+  }
+
+  .container button {
+    width: 50%;
+  }
 }
