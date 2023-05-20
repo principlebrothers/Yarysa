@@ -17,7 +17,7 @@ function Navbar() {
     <nav>
       <div className={styles.mobile__menu}>
         <div className={styles.logo__container}>
-          <img src={yarysaLogo} alt='logo' width='225' height='33' />
+          <img src={yarysaLogo} alt="logo" width="225" height="33" />
         </div>
         <AiOutlineMenu
           className={`${styles.nav__menu}`}
@@ -25,11 +25,11 @@ function Navbar() {
         />
       </div>
       <section
-        id='nav'
+        id="nav"
         className={`${styles.nav} ${isActive ? styles.active : ''}`}
       >
         <div className={styles.desktop__logo__container}>
-          <img src={yarysaLogo} alt='logo' width='225' height='33' />
+          <img src={yarysaLogo} alt="logo" width="225" height="33" />
         </div>
         <div className={`${styles.nav__links}`}>
           {navLinks.map((link) => (
@@ -39,10 +39,10 @@ function Navbar() {
           ))}
         </div>
         <div className={`${styles.nav__action__container} `}>
-          <Link to='/login' className={`${styles.nav__font}`}>
+          <Link to="/login" className={`${styles.nav__font}`}>
             LOG IN
           </Link>
-          <button type='button'>GET STARTED</button>
+          <button type="button">GET STARTED</button>
         </div>
       </section>
     </nav>

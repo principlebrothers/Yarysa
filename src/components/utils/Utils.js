@@ -13,23 +13,41 @@ export const navLinks = [
 export const portfolioData = [
   {
     id: 1,
-    title: 'Development Support',
-    details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+    title: 'Nursing',
+    details: 'Vitals section, procedures and nursing treatment plan',
     icon: BiSupport,
   },
   {
     id: 2,
-    title: 'Easy Integration',
+    title: 'Pharmacy',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+      'Dispensing of drugs and automatic billing of client, reports on drugs sales.',
     icon: GrIntegration,
   },
   {
     id: 3,
-    title: 'Cross Platform',
+    title: 'In-Patient/Admission',
+    details: "Provides all information needed for the admission of patient's",
+    icon: TbArrowFork,
+  },
+  {
+    id: 4,
+    title: 'Lab/Radiology system',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+      'Quick entering and uploading of lab results, received by the practitioner and can also be emailed to patient directly.',
+    icon: BiSupport,
+  },
+  {
+    id: 5,
+    title: 'Inventory',
+    details:
+      'Keep tracks of all purchases of items,  list of items requested by the pharmacist and a data of the item given to the various department and the remaining item in the store.',
+    icon: GrIntegration,
+  },
+  {
+    id: 6,
+    title: 'Cash/Accounting:',
+    details: 'Bill of patient’s, top-ups,reporting and  claims.',
     icon: TbArrowFork,
   },
 ];
@@ -37,21 +55,26 @@ export const portfolioData = [
 export const aboutData = [
   {
     id: 1,
-    title: 'File Insurance Claims',
+    title: 'Streamlined Operations',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+      'Fully integrated clinical, support, finance and billing, supply chain and administrative functions for more efficient operations.',
   },
   {
     id: 2,
-    title: 'Determine Cost of Treatment',
-    details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+    title: 'Interoperability Across Standards',
+    details: 'Compliance with standards like ICD 10/11',
   },
   {
     id: 3,
-    title: 'Collect From Patients and Insurers',
+    title: 'Enhanced Patient Care',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam morbi et tell malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at. Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus nunc elementum ultricies. Duis tristique et amet convallis fermentum. A sed amet orci vulputate sed blandit dolor pharetra.',
+      'Structured, specialty-wise electronic medical records enabling doctors to provide diagnosis-based care with better visibility to patients.',
+  },
+  {
+    id: 4,
+    title: 'Information Security',
+    details:
+      'Role-based security matrix to define user controls in each department and block-chain for optimizing productivity.',
   },
 ];
 

@@ -12,9 +12,9 @@ function Blog() {
           <div className={styles.blog__briefing__left}>
             <h3 className="primary__color">CASE STUDY</h3>
             <p className="primary__color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              condimentum, nisl ut ultricies tincidunt, nisl nisl aliquam nisl,
-              ut
+              Yarysa EMR has a very user-friendly template and flow that is easy
+              for most to use including those who are novices or people
+              unfamiliar with electronic medical records in general.
             </p>
             <span>
               <Link
@@ -29,9 +29,8 @@ function Blog() {
           </div>
           <div className={styles.blog__briefing__right}>
             <p className="primary__color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              condimentum, nisl ut ultricies tincidunt, nisl nisl aliquam nisl,
-              ut
+              The following video show Dr. Biney at Britannia Medical Center
+              sharing his experience after using the yarysa EMR system.
             </p>
           </div>
         </div>

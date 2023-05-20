@@ -23,12 +23,19 @@ function Intro() {
       <div className={styles.sub__container}>
         <div className={styles.left_side}>
           <p>
-            Yarysa’s EMR feature is the best in the world for medical records
-            and information
+            Improve health care efficiency with the world’s first block-chain
+            system YARYSA EMR&apos;s.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Lacinia nec enim nam
-            aliquam. Lacus viverra sit adipiscing
+            Yarysa Electronic Medical Record(EMR), is a digital version of a
+            patient&apos;s medical history that is stored in a computer system
+            and cloud base. It stores a comprehensive collection of a
+            patient&apos;s health information, including medical and surgical
+            history, medications, allergies, immunizations, laboratory test
+            results, and radiology images. YARYSA EMR is used by healthcare
+            providers to track patient care, to communicate with other providers
+            involved in a patient&apos;s care, and to make informed decisions
+            about diagnosis and treatment.
           </p>
           <div className={styles.call__to__action}>
             <button type="button" className={styles.btn}>
@@ -43,10 +50,7 @@ function Intro() {
                 checked
                 readOnly
               />
-              <label
-                htmlFor="checkbox-id"
-                className="tertiary__color"
-              >
+              <label htmlFor="checkbox-id" className="tertiary__color">
                 No credit card required
               </label>
             </div>

@@ -13,9 +13,7 @@ function Portfolio() {
           <p>{'</>'}</p>
         </div>
         <div className={styles.section__title}>
-          <span className="updaged__secondary__color">
-            BUILT FOR HOSPITALS
-          </span>
+          <span className="updaged__secondary__color">BUILT FOR HOSPITALS</span>
           <h2 className="general__font__color">
             Build magical automations for medical billings with Yarysa
             {' '}
@@ -27,7 +25,7 @@ function Portfolio() {
             nunc elementum ultricies. Duis tristique et amet convallis
             fermentum. A sed amet orci vulputate sed blandit dolor pharetra.
           </p>
-          <span className="flex align__center gap updaged__secondary__color small__font">
+          <span className="flex align__center gap updaged__secondary__color small__font pointer">
             Check our pricing
             {' '}
             <MdArrowForwardIos className="arrow" />
@@ -35,9 +33,9 @@ function Portfolio() {
         </div>
       </div>
       <div className={styles.buttom__content}>
-        <div className={styles.left_content}>
+        <figure className={styles.left_content}>
           <img src={checklist} alt="portfolio" width="600px" />
-        </div>
+        </figure>
         <div className={styles.right_content}>
           <div className={styles.portfolio__data}>
             {portfolioData.map((data) => (

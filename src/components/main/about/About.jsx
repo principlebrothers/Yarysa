@@ -25,11 +25,9 @@ function About() {
             prescriptions
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Nullam morbi et tellus
-            malesuada sed maecenas. Nisl cursus ipsum pretium ultrices at.
-            Ullamcorper nibh ridiculus vestibulum aliquet. Suscipit nisl purus
-            nunc elementum ultricies. Duis tristique et amet convallis
-            fermentum. A sed amet orci vulputate sed blandit dolor pharetra.
+            Experience the Future of Healthcare with Yarysa EMR&apos;s Complete
+            Toolkit for Patient Records and Prescriptions - Transform Your
+            Practice with Cutting-Edge Technology and Streamlined Workflows.
           </p>
           <span className="flex align__center gap updaged__secondary__color small__font">
             Check our pricing
