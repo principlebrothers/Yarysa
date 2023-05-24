@@ -8,11 +8,9 @@ import doctorImage from '../../assets/doctorImage.png';
 import pharmacyImage from '../../assets/pharmacyImage.png';
 
 export const navLinks = [
-  { id: 'compliance', page: 'Compliance', path: '/compliance' },
-  { id: 'products', page: 'Products', path: '/products' },
-  { id: 'support', page: 'Support', path: '/support' },
-  { id: 'pricing', page: 'Pricing', path: '/pricing' },
-  { id: 'insurers', page: 'Insurers', path: '/insurers' },
+  { id: 'about', page: 'About Us', path: 'https://www.devdexsoftware.com' },
+  { id: 'modules', page: 'Modules', path: '#modules' },
+  { id: 'contact', page: 'Contact', path: '#contact' },
 ];
 
 export const portfolioData = [
