@@ -22,19 +22,6 @@ function Footer() {
           <GrInstagram />
         </div>
       </div>
-      <div className={`${styles.right}`}>
-        {footerData.map((item) => {
-          const { id, title, details } = item;
-          return (
-            <div key={id} className={`${styles.details__cover}`}>
-              <Link to={`/${id}`}>{title}</Link>
-              <ul>
-                {details.map((data) => <li key={data}>{data.toUpperCase()}</li>)}
-              </ul>
-            </div>
-          );
-        })}
-      </div>
     </footer>
   );
 }

@@ -33,36 +33,3 @@ footer {
 .social > *:hover {
   color: var(--secondary-color);
 }
-
-.right {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  padding: 72px;
-}
-
-.details__cover a {
-  text-decoration: none;
-  font-size: 20px;
-  color: var(--primary-color);
-}
-
-.details__cover a:hover {
-  color: var(--secondary-color);
-}
-
-.details__cover ul {
-  font-size: 20px;
-}
-
-.details__cover ul li {
-  list-style: none;
-  color: var(--primary-color);
-  line-height: 2;
-}
-
-@media screen and (max-width: 425px) {
-  .right {
-    justify-content: center;
-  }
-}
