@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(117.45deg, #2f2e41 17.61%, #404556 55.43%);
+  overflow: hidden;
 }
 
 .container > :first-child {
