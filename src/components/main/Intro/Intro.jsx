@@ -5,6 +5,7 @@ import UnitedHealthcare from '../../../assets/UnitedHealthcare.svg';
 import OscarHealth from '../../../assets/OscarHealth.svg';
 import OmadaHealth from '../../../assets/OmadaHealth.svg';
 import IntroImage from '../../../assets/IntroImage.png';
+import { Fade } from 'react-awesome-reveal';
 
 import styles from './Intro.module.css';
 
@@ -13,7 +14,9 @@ function Intro() {
     <section className={styles.main}>
       <div className={styles.intro_text}>
         <span className='small__font secondary__font__color'>
-          Electronic Medical Record
+          <Fade delay={1e3} cascade damping={1e-1}>
+            Yarysa Electronic Medical Record
+          </Fade>
         </span>
         <h1 className={styles.intro__head__text}>
           THE NEW WORLD OF HEALTHCARE DIGITALIZATION{' '}
@@ -22,38 +25,28 @@ function Intro() {
       <div className={styles.sub__container}>
         <div className={styles.left_side}>
           <p>
-            The new world of healthcare digitalization. Yarysa EMR&apos;s is building a robuts and efficient operating system for medical facilities and patients. We are using blockchain technology to accelerate the transistion of the health sector to a digitalizaise system.
+            Yarysa EMR&apos;s is building a robust and efficient operating
+            system for medical facilities and patients. We are using blockchain
+            technology to accelerate the transistion of the health sector to a
+            digitalize system.
           </p>
           <div className={styles.call__to__action}>
             <button type='button' className={styles.btn}>
-              GET STARTED
+              REQUEST DEMO
             </button>
-            <div className={`${styles.input__container} flex gap`}>
-              {/* eslint-disable jsx-a11y/label-has-associated-control */}
-              <input
-                type='checkbox'
-                id='checkbox-id'
-                name='checkbox-name'
-                checked
-                readOnly
-              />
-              <label htmlFor='checkbox-id' className='tertiary__color'>
-                No credit card required
-              </label>
-            </div>
           </div>
           <div className={styles.partner__logos}>
-            <p>TRUSTED BY TOP DEVELOPERS IN HEALTHCARE</p>
-            <div className={styles.partner_logos_container}>
+            <p>TRUSTED BY TOP FACILITIES IN HEALTHCARE</p>
+            <figure className={styles.partner_logos_container}>
               <img src={OscarHealth} alt='OscarHealth' height='35px' />
               <img src={OmadaHealth} alt='OmadaHealth' height='35px' />
-              <img src={UnitedHealthcare} alt='UnitedHealthcare' />
               <img src={KoreoPng} alt='KoreoPng' height='45px' />
+              <img src={UnitedHealthcare} alt='UnitedHealthcare' />
               <img
                 src={NationalInstitutesHealth}
                 alt='NationalInstitutesHealth'
               />
-            </div>
+            </figure>
           </div>
         </div>
         <section className={styles.right__side}>
