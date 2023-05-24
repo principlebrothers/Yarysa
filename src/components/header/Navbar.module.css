@@ -76,7 +76,26 @@ nav::after {
   font-size: 20px;
   color: var(--primary-color);
   cursor: pointer;
+  border-radius: 0.5rem;
   transition: 0.3s ease-in-out;
+}
+
+.nav__action__container button {
+  animation: pop 1.5s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px) scale(1.02);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .nav__action__container button:hover {
