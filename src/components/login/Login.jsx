@@ -27,7 +27,7 @@ function Login() {
         </div>
         <div className={styles.sign__in__form}>
           <form>
-            <input type="email" placeholder="Enter username here" required />
+            <input type="name" placeholder="Enter username here" required />
             <input type="password" placeholder="Enter password here" required />
             <input type="submit" value="Sign In" />
           </form>
