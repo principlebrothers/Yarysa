@@ -16,7 +16,7 @@
 
 .section__logo p {
   padding: 0.7rem;
-  margin-right: 28px;
+  margin-right: 1rem;
   border-radius: 50%;
   width: 50px;
   text-align: center;
@@ -109,7 +109,7 @@
 
 .module__right__details ul li {
   font-size: 1.1rem;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   list-style: none;
 }
 
@@ -153,6 +153,8 @@
 
   .section__title article p {
     width: 100%;
+    text-align: justify;
+    padding-left: 1rem;
   }
 
   .section__title ul {
@@ -187,7 +189,7 @@
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 471px) {
   .section__title ul {
     grid-template-columns: repeat(1, 1fr);
     padding-left: 1rem;
