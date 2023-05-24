@@ -9,7 +9,7 @@ function Blog() {
     <section className={styles.blog__container}>
       <div className={styles.blog__content}>
         <div className={styles.blog__briefing__container}>
-          <div className={styles.blog__briefing__left}>
+          <section className={styles.blog__briefing__left}>
             <h3 className='primary__color'>CASE STUDY</h3>
             <p className='primary__color medium__font line__height'>
               Yarysa EMR has a very user-friendly template and flow that is easy
@@ -19,18 +19,12 @@ function Blog() {
             <span>
               <Link
                 to='/blog'
-                className='flex align__center gap primary__color'
+                className='flex align__center gap secondary__font__color'
               >
                 read blog post <MdArrowForwardIos className='arrow' />
               </Link>
             </span>
-          </div>
-          <div className={styles.blog__briefing__right}>
-            <p className='primary__color specific__paragraph__font line__height'>
-              The following video show Dr. Biney at Britannia Medical Center
-              sharing his experience after using the yarysa EMR system.
-            </p>
-          </div>
+          </section>
         </div>
       </div>
     </section>
