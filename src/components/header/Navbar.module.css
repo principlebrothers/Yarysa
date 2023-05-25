@@ -69,7 +69,7 @@ nav::after {
   font-weight: 700;
 }
 
-.nav__action__container button {
+.nav_btn {
   background: transparent;
   border: 1px solid var(--secondary-color);
   padding: 0.3rem 0.7rem;
@@ -80,7 +80,7 @@ nav::after {
   transition: 0.3s ease-in-out;
 }
 
-.nav__action__container button {
+.nav_btn {
   animation: pop 1.5s linear infinite;
 }
 
@@ -98,7 +98,7 @@ nav::after {
   }
 }
 
-.nav__action__container button:hover {
+.nav_btn:hover {
   background-color: var(--primary-color);
   color: var(--updaged-secondary-color);
   box-shadow: 0 0 10px 0 var(--border-color);
