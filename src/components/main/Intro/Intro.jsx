@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import KoreoPng from '../../../assets/KoreoPng.png';
 import NationalInstitutesHealth from '../../../assets/NationalInstitutesHealth.svg';
 import UnitedHealthcare from '../../../assets/UnitedHealthcare.svg';
@@ -6,10 +6,21 @@ import OscarHealth from '../../../assets/OscarHealth.svg';
 import OmadaHealth from '../../../assets/OmadaHealth.svg';
 import IntroImage from '../../../assets/IntroImage.png';
 import { Fade } from 'react-awesome-reveal';
+import Form from '../form/Form';
 
 import styles from './Intro.module.css';
 
 function Intro() {
+  const modalRef = useRef(null);
+
+  const handleOpenModal = () => {
+    if (modalRef.current) modalRef.current.showModal();
+  };
+
+  const handleCloseModal = () => {
+    if (modalRef.current) modalRef.current.close();
+  };
+
   return (
     <section className={styles.main}>
       <div className={styles.intro_text}>
@@ -31,10 +42,15 @@ function Intro() {
             digitalize system.
           </p>
           <div className={styles.call__to__action}>
-            <button type='button' className={styles.btn}>
+            <button
+              type='button'
+              className={styles.btn}
+              onClick={handleOpenModal}
+            >
               REQUEST DEMO
             </button>
           </div>
+          <Form modalRef={modalRef} handleCloseModal={handleCloseModal} />
           <div className={styles.partner__logos}>
             <p>TRUSTED BY TOP FACILITIES IN HEALTHCARE</p>
             <figure className={styles.partner_logos_container}>
