@@ -2,9 +2,10 @@ import React, { useRef } from 'react';
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import nurse from '../../../assets/nurse.png';
 import { aboutData } from '../../utils/Utils';
-import 'animate.css'
+import 'animate.css';
 
 import styles from './About.module.css';
+import Form from '../form/Form';
 
 function About() {
   const modalRef = useRef(null);
@@ -40,9 +41,9 @@ function About() {
         </section>
       </div>
       <div className={styles.middle__content}>
-        <div className={styles.left_content}>
-          <img src={nurse} alt='portfolio' height='300px' width='416px' />
-        </div>
+        <figure className={styles.left_content}>
+          <img src={nurse} alt='portfolio' height='300' width='416' />
+        </figure>
       </div>
       <div className={styles.buttom__content}>
         <div className={styles.portfolio__data}>
@@ -60,20 +61,24 @@ function About() {
         <h3 className='primary__color large__font'> Contact Us</h3>
         <article className={styles.contact__action__container}>
           <div className={styles.contact__details}>
-            <p>
-              Phone:
-              <a href='tel:+233556624118'> +233556624118</a>
-            </p>
-            <p>
-              Tel:
-              <a href='tel:+233556624118'> +233276113371</a>
-            </p>
-            <p>
-              Email:&nbsp;
-              <a href='mailto:project@devdexsoftware.com'>
-                project@devdexsoftware.com
-              </a>
-            </p>
+            <div className={styles.contact__details__phone}>
+              <p>
+                Phone:
+                <a href='tel:+233556624118'> +233556624118</a>
+              </p>
+              <p>
+                Tel:
+                <a href='tel:+233556624118'> +233276113371</a>
+              </p>
+            </div>
+            <div className={styles.contact__details__address}>
+              <p>
+                Email:&nbsp;
+                <a href='mailto:project@devdexsoftware.com'>
+                  project@devdexsoftware.com
+                </a>
+              </p>
+            </div>
           </div>
           <div className={styles.contact__form__container}>
             <p className='primary__color medium__font'>
@@ -85,58 +90,12 @@ function About() {
               data-open-modal
               onClick={handleOpenModal}
             >
-              CONTACT US
+              REQUEST DEMO
             </button>
-            <dialog
-              ref={modalRef}
-              className={`${styles.modal__container} animate__animated animate__bounceIn`}
-            >
-              <section className={styles.modal__header}>
-                <h3
-                  className={`${styles.form__title} updaged__secondary__color`}
-                >
-                  Contact Us
-                </h3>
-                <button
-                  type='button'
-                  className={styles.close__btn}
-                  data-close-modal
-                  onClick={handleCloseModal}
-                >
-                  &times;
-                </button>
-              </section>
-              <form>
-                <input
-                  type='text'
-                  name='name'
-                  id='name'
-                  placeholder='Enter your name'
-                  required
-                />
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  placeholder='Enter your email'
-                  required
-                />
-                <textarea
-                  name='message'
-                  id='message'
-                  placeholder='Enter your message'
-                  required
-                />
-                <div className={styles.form__group}>
-                  <button
-                    type='submit'
-                    className={`${styles.submit__btn} flex gap justify__center `}
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </dialog>
+            <Form
+              handleCloseModal={handleCloseModal}
+              modalRef={modalRef}
+            />
           </div>
         </article>
       </section>
