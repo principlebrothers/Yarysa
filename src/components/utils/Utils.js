@@ -10,7 +10,7 @@ import pharmacyImage from '../../assets/pharmacyImage.png';
 export const navLinks = [
   { id: 'about', page: 'About Us', path: 'https://www.devdexsoftware.com' },
   { id: 'modules', page: 'Modules', path: '#modules' },
-  { id: 'contact', page: 'Contact', path: '#contact' },
+  { id: 'contact', page: 'Contact Us', path: '#contact' },
 ];
 
 export const portfolioData = [
