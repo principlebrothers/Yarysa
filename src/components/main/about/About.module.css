@@ -124,7 +124,7 @@
 
 .contact__form__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   position: relative;
 }
@@ -175,12 +175,6 @@
   transform: scale(0.97);
 }
 
-@media (width >= 1300px) {
-  .contact__details {
-    display: inline-flex;
-    padding-top: 0.5rem;
-  }
-}
 
 @media (width <= 800px) {
   .top__content {
@@ -224,13 +218,14 @@
   }
 
   .final__container h3 {
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 1rem 2rem;
   }
 }
 
-@media (width <= 652px) {
+@media (width <= 700px) {
   .contact__form__container {
     margin-left: 1rem;
+    padding-left: 0.8rem;
     align-items: flex-start;
   }
 }
