@@ -1,10 +1,11 @@
-import React, {useRef} from 'react';
-import KoreoPng from '../../../assets/KoreoPng.png';
-import NationalInstitutesHealth from '../../../assets/NationalInstitutesHealth.svg';
-import UnitedHealthcare from '../../../assets/UnitedHealthcare.svg';
-import OscarHealth from '../../../assets/OscarHealth.svg';
-import OmadaHealth from '../../../assets/OmadaHealth.svg';
+import React, { useRef } from 'react';
 import IntroImage from '../../../assets/IntroImage.png';
+import britannia from '../../../assets/britannia.png';
+import namaata from '../../../assets/namaata.png';
+import logo from '../../../assets/logo.png';
+import westside from '../../../assets/westside.png';
+import westview from '../../../assets/westview.png';
+import empatlogo from '../../../assets/empatlogo.png';
 import { Fade } from 'react-awesome-reveal';
 import Form from '../form/Form';
 
@@ -54,14 +55,12 @@ function Intro() {
           <div className={styles.partner__logos}>
             <p>TRUSTED BY TOP FACILITIES IN HEALTHCARE</p>
             <figure className={styles.partner_logos_container}>
-              <img src={OscarHealth} alt='OscarHealth' height='35px' />
-              <img src={OmadaHealth} alt='OmadaHealth' height='35px' />
-              <img src={KoreoPng} alt='KoreoPng' height='45px' />
-              <img src={UnitedHealthcare} alt='UnitedHealthcare' />
-              <img
-                src={NationalInstitutesHealth}
-                alt='NationalInstitutesHealth'
-              />
+              <img src={britannia} alt='britania' height='70px' />
+              <img src={westview} alt='westview' height='70px' />
+              <img src={westside} alt='westside' height='60px' />
+              <img src={logo} alt='logo' height='60px' />
+              <img src={empatlogo} alt='empatcaiquo' height='70px' />
+              <img src={namaata} alt='namaata' height='70px' />
             </figure>
           </div>
         </div>

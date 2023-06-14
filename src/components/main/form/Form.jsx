@@ -1,9 +1,52 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import 'animate.css';
 import styles from './Form.module.css';
 
 function Form({ handleCloseModal, modalRef }) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_jewisic',
+        'template_fpscvbc',
+        form.current,
+        'CSodZ7dSf38xx2L7O'
+      )
+      .then(
+        () => {
+          toast.success('Message sent successfully', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          });
+          e.target.reset();
+        },
+        () => {
+          toast.error('Message not sent', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          });
+        }
+      );
+  };
 
   return (
     <>
@@ -24,7 +67,7 @@ function Form({ handleCloseModal, modalRef }) {
             &times;
           </button>
         </section>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type='text'
             name='name'
@@ -55,6 +98,7 @@ function Form({ handleCloseModal, modalRef }) {
           </div>
         </form>
       </dialog>
+      <ToastContainer />
     </>
   );
 }
