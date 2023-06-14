@@ -82,6 +82,13 @@ function Form({ handleCloseModal, modalRef }) {
             placeholder='Enter your email'
             required
           />
+          <input
+            type='number'
+            name='phone'
+            id='phone'
+            placeholder='Enter your phone number'
+            required
+          />
           <textarea
             name='message'
             id='message'

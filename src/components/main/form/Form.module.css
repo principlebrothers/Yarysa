@@ -96,7 +96,7 @@ textarea:focus {
 
 @media screen and (max-width: 800px) {
   .modal__container {
-    top: 38%;
-    left: 10%;
+    top: 30%;
+    left: 7%;
   }
 }
