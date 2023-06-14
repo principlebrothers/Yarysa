@@ -21,11 +21,12 @@
   width: 50px;
   text-align: center;
   height: 45px;
-  background: linear-gradient(
-    136.97deg,
-    rgba(2, 181, 92, 0.36) 24.14%,
-    rgba(2, 181, 92, 0) 104.79%
-  );
+  background:
+    linear-gradient(
+      136.97deg,
+      rgba(2, 181, 92, 0.36) 24.14%,
+      rgba(2, 181, 92, 0) 104.79%
+    );
 }
 
 .section__title span {
@@ -172,7 +173,7 @@
   ._module__items img {
     width: 415px;
     object-fit: cover;
-}
+  }
 
   .module__right__details {
     padding: 0 2rem;

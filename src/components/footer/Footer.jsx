@@ -13,7 +13,13 @@ function Footer() {
         <a href="#nav">
           <img src={yarysaLogo} alt="logo" width="225" height="33" />
         </a>
-        <span> &copy; {new Date().getFullYear()} Devdex Software Inc</span>
+        <span>
+          {' '}
+          &copy;
+          {new Date().getFullYear()}
+          {' '}
+          Devdex Software Inc
+        </span>
         <div className={styles.social}>
           <SiFacebook />
           <IoLogoTwitter />

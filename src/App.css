@@ -46,7 +46,9 @@
   font-size: 1.1rem;
   padding-right: 1rem;
 }
+
 .large__font {
+  /* stylelint-disable-next-line */
   font-size: clamp(1.2rem, 5vw, 1.8rem);
 }
 

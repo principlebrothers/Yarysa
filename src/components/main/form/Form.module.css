@@ -34,14 +34,6 @@
   transition: 0.3s ease-in-out;
 }
 
-.modal__header button:hover {
-  background-color: var(--primary-color);
-  color: var(--updaged-secondary-color);
-  transform: scale(1.03);
-  box-shadow: 0 0 10px 0 var(--border-color);
-  border: 1px solid var(--updaged-secondary-color);
-}
-
 .modal__container form {
   display: flex;
   flex-direction: column;
@@ -84,6 +76,14 @@ textarea:focus {
   cursor: pointer;
   transition: 0.3s ease-in-out;
   box-shadow: -4px 0 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+.modal__header button:hover {
+  background-color: var(--primary-color);
+  color: var(--updaged-secondary-color);
+  transform: scale(1.03);
+  box-shadow: 0 0 10px 0 var(--border-color);
+  border: 1px solid var(--updaged-secondary-color);
 }
 
 .form__group button:hover {

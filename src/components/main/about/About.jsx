@@ -23,14 +23,14 @@ function About() {
       <div className={styles.top__content}>
         <div className={styles.section__logo}>
           <p>
-            <HiOutlineLightBulb className='updaged__secondary__color medium__font' />
+            <HiOutlineLightBulb className="updaged__secondary__color medium__font" />
           </p>
         </div>
         <section className={styles.section__title}>
-          <span className='updaged__secondary__color'>
+          <span className="updaged__secondary__color">
             MEDICAL BILLING DEVELOPMENT PLATFORM
           </span>
-          <h2 className='general__font__color'>
+          <h2 className="general__font__color">
             Complete Toolkit for patient records and healthcare prescriptions
           </h2>
           <p>
@@ -42,7 +42,7 @@ function About() {
       </div>
       <div className={styles.middle__content}>
         <figure className={styles.left_content}>
-          <img src={nurse} alt='portfolio' height='300' width='416' />
+          <img src={nurse} alt="portfolio" height="300" width="416" />
         </figure>
       </div>
       <div className={styles.buttom__content}>
@@ -57,35 +57,35 @@ function About() {
           ))}
         </div>
       </div>
-      <section className={styles.final__container} id='contact'>
-        <h3 className='primary__color large__font'> Contact Us</h3>
+      <section className={styles.final__container} id="contact">
+        <h3 className="primary__color large__font"> Contact Us</h3>
         <article className={styles.contact__action__container}>
           <div className={styles.contact__details}>
             <div className={styles.contact__details__phone}>
               <p>
                 Phone:
-                <a href='tel:+233556624118'> +233556624118</a>
+                <a href="tel:+233556624118"> +233556624118</a>
               </p>
               <p>
                 Tel:
-                <a href='tel:+233556624118'> +233276113371</a>
+                <a href="tel:+233556624118"> +233276113371</a>
               </p>
             </div>
             <div className={styles.contact__details__address}>
               <p>
                 Email:&nbsp;
-                <a href='mailto:project@devdexsoftware.com'>
+                <a href="mailto:project@devdexsoftware.com">
                   project@devdexsoftware.com
                 </a>
               </p>
             </div>
           </div>
           <div className={styles.contact__form__container}>
-            <p className='primary__color medium__font'>
+            <p className="primary__color medium__font">
               Start protecting patients and improve healthcare today
             </p>
             <button
-              type='button'
+              type="button"
               className={`${styles.btn} flex gap justify__center `}
               data-open-modal
               onClick={handleOpenModal}
