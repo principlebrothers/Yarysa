@@ -11,40 +11,42 @@ function Footer() {
   return (
     <footer>
       <div className={`${styles.left}`}>
-        <a href='#nav'>
-          <img src={yarysaLogo} alt='logo' width='225' height='33' />
+        <a href="#nav">
+          <img src={yarysaLogo} alt="logo" width="225" height="33" />
         </a>
         <span>
           {' '}
           &copy;
-          {new Date().getFullYear()} Devdex Software Inc
+          {new Date().getFullYear()}
+          {' '}
+          Devdex Software Inc
         </span>
         <div className={styles.social}>
           <a
-            href='https://www.facebook.com/yarysaemr'
-            target='_blank'
-            rel='noreferrer'
+            href="https://www.facebook.com/yarysaemr"
+            target="_blank"
+            rel="noreferrer"
           >
             <SiFacebook />
           </a>
           <a
-            href='https://twitter.com/YarysaEMR'
-            target='_blank'
-            rel='noreferrer'
+            href="https://twitter.com/YarysaEMR"
+            target="_blank"
+            rel="noreferrer"
           >
             <IoLogoTwitter />
           </a>
           <a
-            href='https://www.instagram.com/yarysaemr'
-            target='_blank'
-            rel='noreferrer'
+            href="https://www.instagram.com/yarysaemr"
+            target="_blank"
+            rel="noreferrer"
           >
             <GrInstagram />
           </a>
           <a
-            href='https://www.linkedin.com/in/yarysa-emr-1b84a8208'
-            target='_blank'
-            rel='noreferrer'
+            href="https://www.linkedin.com/in/yarysa-emr-1b84a8208"
+            target="_blank"
+            rel="noreferrer"
           >
             <AiFillLinkedin />
           </a>
