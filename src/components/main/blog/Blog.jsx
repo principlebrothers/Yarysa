@@ -18,7 +18,7 @@ function Blog() {
             </p>
             <span>
               <Link
-                to="/blog"
+                to="/blogs"
                 className="flex align__center gap secondary__font__color"
               >
                 read blog post
