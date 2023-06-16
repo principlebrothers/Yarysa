@@ -46,7 +46,9 @@
   font-size: 1.1rem;
   padding-right: 1rem;
 }
+
 .large__font {
+  /* stylelint-disable-next-line */
   font-size: clamp(1.2rem, 5vw, 1.8rem);
 }
 
@@ -122,4 +124,17 @@
 
 button {
   font-family: var(--font-family);
+}
+
+.responsive-container {
+  flex: 1;
+  background-color: #eeecec;
+  padding: 10px 100px 0 100px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .responsive-container {
+    padding: 10px 15px 0 15px;
+  }
 }

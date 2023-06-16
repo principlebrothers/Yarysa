@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
@@ -17,7 +18,7 @@ function Form({ handleCloseModal, modalRef }) {
         'service_jewisic',
         'template_fpscvbc',
         form.current,
-        'CSodZ7dSf38xx2L7O'
+        'CSodZ7dSf38xx2L7O',
       )
       .then(
         () => {
@@ -44,7 +45,7 @@ function Form({ handleCloseModal, modalRef }) {
             progress: undefined,
             theme: 'light',
           });
-        }
+        },
       );
   };
 
@@ -59,7 +60,7 @@ function Form({ handleCloseModal, modalRef }) {
             Contact Us
           </h3>
           <button
-            type='button'
+            type="button"
             className={styles.close__btn}
             data-close-modal
             onClick={handleCloseModal}
@@ -69,35 +70,35 @@ function Form({ handleCloseModal, modalRef }) {
         </section>
         <form ref={form} onSubmit={sendEmail}>
           <input
-            type='text'
-            name='name'
-            id='name'
-            placeholder='Enter your name'
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
             required
           />
           <input
-            type='email'
-            name='email'
-            id='email'
-            placeholder='Enter your email'
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
             required
           />
           <input
-            type='number'
-            name='phone'
-            id='phone'
-            placeholder='Enter your phone number'
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
             required
           />
           <textarea
-            name='message'
-            id='message'
-            placeholder='Enter your message'
+            name="message"
+            id="message"
+            placeholder="Enter your message"
             required
           />
           <div className={styles.form__group}>
             <button
-              type='submit'
+              type="submit"
               className={`${styles.submit__btn} flex gap justify__center `}
             >
               Send Message

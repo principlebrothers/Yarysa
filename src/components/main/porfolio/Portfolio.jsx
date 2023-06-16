@@ -1,22 +1,23 @@
 import React from 'react';
-import { portfolioData } from '../../utils/Utils';
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 import { IoCheckmarkCircleSharp } from 'react-icons/io5';
 import { Slide } from 'react-awesome-reveal';
+import { portfolioData } from '../../utils/Utils';
 
 import styles from './Portfolio.module.css';
 
 function Portfolio() {
   return (
-    <section className={styles.portfolio__container} id='modules'>
+    <section className={styles.portfolio__container} id="modules">
       <div className={styles.top__content}>
         <div className={styles.section__logo}>
           <p>{'</>'}</p>
         </div>
         <section className={styles.section__title}>
-          <span className='updaged__secondary__color'>BUILT FOR HOSPITALS</span>
-          <h2 className='general__font__color'>
-            Build magical automations for medical billings with Yarysa{' '}
+          <span className="updaged__secondary__color">BUILT FOR HOSPITALS</span>
+          <h2 className="general__font__color">
+            Build magical automations for medical billings with Yarysa
+            {' '}
           </h2>
           <article className={styles.section__briefing}>
             <p>
@@ -65,16 +66,16 @@ function Portfolio() {
             key={data.id}
           >
             {data.id === 'laboratory' || data.id === 'pharmacy' ? (
-              <Slide direction='left'>
+              <Slide direction="left">
                 <figure className={styles.module_left}>
-                  <img src={data.image} alt='portfolio' />
+                  <img src={data.image} alt="portfolio" />
                 </figure>
                 <div className={styles.module__right}>
                   <div className={styles.data__item}>
-                    <span className='padding__right'>
-                      <data.icon className='updaged__secondary__color ' />
+                    <span className="padding__right">
+                      <data.icon className="updaged__secondary__color " />
                     </span>
-                    <h3 className='updaged__secondary__color large__font'>
+                    <h3 className="updaged__secondary__color large__font">
                       {data.title}
                     </h3>
                   </div>
@@ -85,7 +86,8 @@ function Portfolio() {
                         <li key={feature}>
                           <IoCheckmarkCircleSharp
                             className={styles.check__mark}
-                          />{' '}
+                          />
+                          {' '}
                           {feature}
                         </li>
                       ))}
@@ -94,16 +96,16 @@ function Portfolio() {
                 </div>
               </Slide>
             ) : (
-              <Slide direction='right'>
+              <Slide direction="right">
                 <figure className={styles.module_left}>
-                  <img src={data.image} alt='portfolio' />
+                  <img src={data.image} alt="portfolio" />
                 </figure>
                 <div className={styles.module__right}>
                   <div className={styles.data__item}>
-                    <span className='padding__right'>
-                      <data.icon className='updaged__secondary__color ' />
+                    <span className="padding__right">
+                      <data.icon className="updaged__secondary__color " />
                     </span>
-                    <h3 className='updaged__secondary__color large__font'>
+                    <h3 className="updaged__secondary__color large__font">
                       {data.title}
                     </h3>
                   </div>
@@ -114,7 +116,8 @@ function Portfolio() {
                         <li key={feature}>
                           <IoCheckmarkCircleSharp
                             className={styles.check__mark}
-                          />{' '}
+                          />
+                          {' '}
                           {feature}
                         </li>
                       ))}

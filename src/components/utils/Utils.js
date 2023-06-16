@@ -13,6 +13,11 @@ export const navLinks = [
   { id: 'contact', page: 'Contact Us', path: '#contact' },
 ];
 
+export const blogNavLinks = [
+  { id: 'about', page: 'About Us', path: 'https://www.devdexsoftware.com' },
+  { id: 'home', page: 'Home', path: '/' },
+];
+
 export const portfolioData = [
   {
     id: 'nursing',
