@@ -23,7 +23,6 @@ function Blogs() {
         setBlogs(extractedBlogs);
         setLoading(false);
       } catch (error) {
-        console.log(error)
         toast.error(error.message, {
           position: 'top-center',
           autoClose: 7000,
