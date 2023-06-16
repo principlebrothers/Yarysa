@@ -1,0 +1,151 @@
+nav {
+  position: relative;
+  margin: 2rem 3rem;
+}
+
+nav::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 18px;
+  width: 97%;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav__menu {
+  display: none;
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.logo__container {
+  display: none;
+}
+
+.nav__menu:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 var(--border-color);
+}
+
+.nav__links {
+  display: flex;
+  padding: 0 0.3rem;
+  gap: 2rem;
+}
+
+.nav__font {
+  font-size: 20px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.nav__font:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+}
+
+.nav__action__container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__action__container a:hover {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.nav_btn {
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  padding: 0.3rem 0.7rem;
+  font-size: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
+  animation: pop 1.5s linear infinite;
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px) scale(1.02);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav_btn:hover {
+  background-color: var(--primary-color);
+  color: var(--updaged-secondary-color);
+  box-shadow: 0 0 10px 0 var(--border-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .logo__container {
+    display: block;
+  }
+
+  .mobile__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .desktop__logo__container {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.3rem;
+    gap: 2rem;
+  }
+
+  .nav__action__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .active {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
