@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from '../components/container/Container';
 import Footer from '../components/footer/Footer';
 import Blogs from '../components/blogs/Blogs';
 import Navbar from '../components/blogs/header/Navbar';

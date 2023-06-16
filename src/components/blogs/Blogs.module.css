@@ -4,6 +4,7 @@
   align-items: center;
   height: 40vh;
 }
+
 .main__cover h1 {
   text-align: center;
   color: var(--updaged-secondary-color);
@@ -15,7 +16,7 @@
   margin-bottom: 1rem;
 }
 
-.main__cover h2{
+.main__cover h2 {
   color: #2f2e41;
   /* stylelint-disable-next-line */
   font-size: clamp(1.5rem, 2vw, 2rem);
@@ -37,19 +38,19 @@
   border-radius: 0.5rem;
 }
 
+.about__blog :is(p,  span) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--updaged-secondary-color);
+}
+
 .about__blog :is(.pub__date, .author) {
   display: flex;
   align-items: center;
   gap: 3px;
 }
 
-.about__blog p, .about__blog span{
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--updaged-secondary-color);
-}
-
-.about__blog span{
+.about__blog span {
   color: #2f2e41;
 }
 
@@ -70,24 +71,17 @@
   text-decoration: underline;
 }
 
-
-@media(width <= 600px) {
-  .main__cover h2{
+@media (width <= 600px) {
+  .main__cover h2 {
     /* stylelint-disable-next-line */
     font-size: clamp(1.3rem, 2vw, 2rem);
-}
+  }
+
   .about__blog {
     flex-direction: column;
     width: 100%;
     gap: 0.5rem;
     padding-block: 0.15rem;
-  }
-
-  .about__blog :is(.pub__date, .author) {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 3px;
   }
 
   .pub__date :is(span, p) {
@@ -98,4 +92,10 @@
     font-size: 0.95rem;
   }
 
+  .about__blog :is(.pub__date, .author) {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
 }
