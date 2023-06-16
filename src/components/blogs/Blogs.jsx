@@ -14,7 +14,7 @@ function Blogs() {
     const fetchBlogs = async () => {
       try {
         const response = await axios.get(
-          'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@devdexsoftware'
+          'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@devdexsoftware',
         );
 
         const extractedBlogs = response.data.items;
@@ -32,17 +32,17 @@ function Blogs() {
 
   return (
     <main className={styles.main__cover}>
-      <h1 className='animate__animated animate__heartBeat'>Blogs</h1>
+      <h1 className="animate__animated animate__heartBeat">Blogs</h1>
       {loading && (
         <div className={styles.loading}>
           <Hearts
-            height='80'
-            width='80'
-            color='#4fa94d'
-            ariaLabel='hearts-loading'
+            height="80"
+            width="80"
+            color="#4fa94d"
+            ariaLabel="hearts-loading"
             wrapperStyle={{}}
-            wrapperClass=''
-            visible={true}
+            wrapperClass=""
+            visible
           />
           ;
         </div>
@@ -51,13 +51,13 @@ function Blogs() {
         <article key={blog.pubDate}>
           <h2 className={styles.title}>{blog.title}</h2>
           <div className={styles.about__blog}>
-            <div role='group' className={styles.pub__date}>
+            <div role="group" className={styles.pub__date}>
               <span>Published Date:</span>
               <p className={styles.date}>
                 {moment(blog.pubDate).format('YYYY-MM-DD HH:mm:ss')}
               </p>
             </div>
-            <div role='group' className={styles.author}>
+            <div role="group" className={styles.author}>
               <span>Author:</span>
               <p className={styles.author}>{blog.author}</p>
             </div>
@@ -65,7 +65,7 @@ function Blogs() {
           <p className={styles.main_blog}>
             {blog.content.replace(/<[^>]*>/g, '')}
           </p>
-          <a href={blog.guid} target='_blank' rel='noopener noreferrer'>
+          <a href={blog.guid} target="_blank" rel="noopener noreferrer">
             Read More
           </a>
         </article>
@@ -73,6 +73,5 @@ function Blogs() {
     </main>
   );
 }
-
 
 export default Blogs;

@@ -28,7 +28,7 @@ function Navbar() {
     <nav>
       <div className={styles.mobile__menu}>
         <figure className={styles.logo__container}>
-          <img src={yarysaLogo} alt='logo' width='225' height='33' />
+          <img src={yarysaLogo} alt="logo" width="225" height="33" />
         </figure>
         <AiOutlineMenu
           className={`${styles.nav__menu}`}
@@ -36,37 +36,35 @@ function Navbar() {
         />
       </div>
       <section
-        id='nav'
+        id="nav"
         className={`${styles.nav} ${isActive ? styles.active : ''}`}
       >
         <figure
           className={`${styles.desktop__logo__container} animate__animated animate__shakeY`}
         >
-          <img src={yarysaLogo} alt='logo' width='225' height='33' />
+          <img src={yarysaLogo} alt="logo" width="225" height="33" />
         </figure>
         <div className={`${styles.nav__links}`}>
-          {blogNavLinks.map((link) =>
-            link.id === 'about' ? (
-              <a
-                href={link.path}
-                key={link.id}
-                className={styles.nav__font}
-                target='_blank'
-                rel='noreferrer'
-              >
-                {link.page}
-              </a>
-            ) : (
-              <Link to={link.path} key={link.id} className={styles.nav__font}>{link.page}</Link>
-            )
-          )}
+          {blogNavLinks.map((link) => (link.id === 'about' ? (
+            <a
+              href={link.path}
+              key={link.id}
+              className={styles.nav__font}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.page}
+            </a>
+          ) : (
+            <Link to={link.path} key={link.id} className={styles.nav__font}>{link.page}</Link>
+          )))}
         </div>
         <div className={`${styles.nav__action__container} `}>
-          <Link to='/login' className={`${styles.nav__font}`}>
+          <Link to="/login" className={`${styles.nav__font}`}>
             LOG IN
           </Link>
           <button
-            type='button'
+            type="button"
             className={styles.nav_btn}
             onClick={handleOpenModal}
           >

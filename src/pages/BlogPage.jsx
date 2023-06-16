@@ -4,7 +4,6 @@ import Footer from '../components/footer/Footer';
 import Blogs from '../components/blogs/Blogs';
 import Navbar from '../components/blogs/header/Navbar';
 
-
 function BlogPage() {
   return (
     <div
@@ -16,7 +15,7 @@ function BlogPage() {
       }}
     >
       <Navbar />
-      <div className='responsive-container'>
+      <div className="responsive-container">
         <Blogs />
       </div>
       <Footer />
@@ -24,4 +23,4 @@ function BlogPage() {
   );
 }
 
-export default BlogPage
+export default BlogPage;
