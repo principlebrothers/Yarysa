@@ -26,6 +26,7 @@ function Footer() {
             href="https://www.facebook.com/yarysaemr"
             target="_blank"
             rel="noreferrer"
+            aria-label="facebook"
           >
             <SiFacebook />
           </a>
@@ -33,6 +34,7 @@ function Footer() {
             href="https://twitter.com/YarysaEMR"
             target="_blank"
             rel="noreferrer"
+            aria-label="twitter"
           >
             <IoLogoTwitter />
           </a>
@@ -40,6 +42,7 @@ function Footer() {
             href="https://www.instagram.com/yarysaemr"
             target="_blank"
             rel="noreferrer"
+            aria-label="instagram"
           >
             <GrInstagram />
           </a>
@@ -47,6 +50,7 @@ function Footer() {
             href="https://www.linkedin.com/in/yarysa-emr-1b84a8208"
             target="_blank"
             rel="noreferrer"
+            aria-label="linkedin"
           >
             <AiFillLinkedin />
           </a>

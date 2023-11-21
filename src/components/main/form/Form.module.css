@@ -45,10 +45,10 @@ textarea {
   width: 300px;
   font-family: inherit;
   font-size: 1.2rem;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
   margin: 0.5rem 0;
   border: 1px solid var(--border-color);
-  box-shadow: -4px 0 10px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: -4px 0 10px 3px rgb(0 0 0 / 25%);
   outline: 1px solid var(--updaged-secondary-color);
 }
 
@@ -75,7 +75,7 @@ textarea:focus {
   border: 1px solid var(--secondary-color);
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  box-shadow: -4px 0 10px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: -4px 0 10px 3px rgb(0 0 0 / 25%);
 }
 
 .modal__header button:hover {
@@ -94,7 +94,7 @@ textarea:focus {
   transform: scale(0.8);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width <= 800px) {
   .modal__container {
     top: 30%;
     left: 7%;
