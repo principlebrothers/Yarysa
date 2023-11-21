@@ -15,7 +15,7 @@ function Form({ handleCloseModal, modalRef }) {
     const serviceID = import.meta.env.VITE_YARYSA_SERVICE_ID;
     const templateID = import.meta.env.VITE_YARYSA_MSG_TEMPLATE_ID;
     const userID = import.meta.env.VITE_YARYSA_USER_ID;
-    
+
     emailjs.sendForm(serviceID, templateID, form.current, userID).then(
       () => {
         toast.success('Message sent successfully', {
@@ -41,7 +41,7 @@ function Form({ handleCloseModal, modalRef }) {
           progress: undefined,
           theme: 'light',
         });
-      }
+      },
     );
   };
 

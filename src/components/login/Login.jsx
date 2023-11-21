@@ -43,7 +43,7 @@ function Login() {
           progress: undefined,
           theme: 'light',
         });
-      }
+      },
     );
   };
   return (
