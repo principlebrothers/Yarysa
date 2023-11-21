@@ -101,7 +101,7 @@ nav::after {
   box-shadow: 0 0 10px 0 var(--border-color);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (width <= 1024px) {
   .nav {
     display: none;
     flex-direction: column;

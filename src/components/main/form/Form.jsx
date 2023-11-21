@@ -1,7 +1,7 @@
 /* eslint react/prop-types: 0 */
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import 'animate.css';
@@ -12,41 +12,37 @@ function Form({ handleCloseModal, modalRef }) {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const serviceID = import.meta.env.VITE_YARYSA_SERVICE_ID;
+    const templateID = import.meta.env.VITE_YARYSA_MSG_TEMPLATE_ID;
+    const userID = import.meta.env.VITE_YARYSA_USER_ID;
 
-    emailjs
-      .sendForm(
-        'service_jewisic',
-        'template_fpscvbc',
-        form.current,
-        'CSodZ7dSf38xx2L7O',
-      )
-      .then(
-        () => {
-          toast.success('Message sent successfully', {
-            position: 'top-center',
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: 'light',
-          });
-          e.target.reset();
-        },
-        () => {
-          toast.error('Message not sent', {
-            position: 'top-center',
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: 'light',
-          });
-        },
-      );
+    emailjs.sendForm(serviceID, templateID, form.current, userID).then(
+      () => {
+        toast.success('Message sent successfully', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'light',
+        });
+        e.target.reset();
+      },
+      () => {
+        toast.error('Message not sent', {
+          position: 'top-center',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'light',
+        });
+      },
+    );
   };
 
   return (
@@ -106,7 +102,6 @@ function Form({ handleCloseModal, modalRef }) {
           </div>
         </form>
       </dialog>
-      <ToastContainer />
     </>
   );
 }
