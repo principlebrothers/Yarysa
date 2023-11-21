@@ -49,7 +49,7 @@ function Login() {
   return (
     <section className={styles.container}>
       <div className={styles.back__btn}>
-        <a href="/">
+        <a href="/" aria-label="return">
           <RiArrowGoBackFill />
         </a>
       </div>
