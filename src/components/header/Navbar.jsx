@@ -42,7 +42,7 @@ function Navbar() {
         <figure
           className={`${styles.desktop__logo__container} animate__animated animate__shakeY`}
         >
-          <img src={yarysaLogo} alt="logo" width="225" height="33" />
+          <img src={yarysaLogo} alt="logo" width="170" height="33" />
         </figure>
         <div className={`${styles.nav__links}`}>
           {navLinks.map((link) => (link.id === 'about' ? (
@@ -62,7 +62,7 @@ function Navbar() {
           )))}
         </div>
         <div className={`${styles.nav__action__container} `}>
-          <Link to="/login" className={`${styles.nav__font}`}>
+          <Link to="https://demo.yarysa.com/users/sign_in" target="_blank" className={`${styles.nav__font}`}>
             LOG IN
           </Link>
           <button type="button" className={styles.nav_btn} onClick={handleOpenModal}>
