@@ -95,7 +95,7 @@ function Login() {
               placeholder="Enter contact phone number"
               required
             />
-            <input type="submit" value="Sign Up" />
+            <input type="submit" value="Onboard" />
           </form>
         </div>
         <div className={styles.allright_reverse}>
